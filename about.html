@@ -252,7 +252,7 @@
           comprehensive digital marketing and web solutions.<br><br>
           At present, we have numerous clients from Germany, Hong Kong, and the United States who’ve put their trust in the hands of our experts. We work with businesses of all sizes – startups to even large franchises – from various industries and niches.</p>
           <div class="btn-wrap">
-            <a href="javascript:;" onclick="setButtonURL();" class="btn-primary">Get Started</a>
+            <a href="javascript:;" onclick="openTawkTo();" class="btn-primary">Get Started</a>
           </div>
         </div>
       </div>
@@ -706,7 +706,7 @@
 
 
 <!-- Start of creatixmindhelp Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6c44defe-f64e-402f-934f-3dd3091ab4fe"> </script>
+<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6c44defe-f64e-402f-934f-3dd3091ab4fe"> </script> -->
 <!-- End of creatixmindhelp Zendesk Widget script -->
 
 
@@ -789,8 +789,31 @@ $(document).ready(function () {
     
 </script>
 
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+      var elements = document.querySelectorAll('div[onclick="openTawkTo()"]');
+      for (var i = 0; i < elements.length; i++) {
+          elements[i].addEventListener('click', openTawkTo);
+      }
+  });
+
+  function openTawkTo() {
+      Tawk_API.toggle();
+  }
+</script>
 
 
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/6493316794cf5d49dc5f11d0/1h3ffi061';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
 
 
 
