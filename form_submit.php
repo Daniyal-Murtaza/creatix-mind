@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $number = $_POST['b_num'];
     $message = $_POST['b_msg'];
     $budget = $_POST['Services'];
+    $package = $_POST['pack'];
 
     // Validate and sanitize the input data
     $name = filter_var($name, FILTER_SANITIZE_STRING);
@@ -12,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $number = filter_var($number, FILTER_SANITIZE_NUMBER_INT);
     $message = filter_var($message, FILTER_SANITIZE_STRING);
     $budget = filter_var($budget, FILTER_SANITIZE_STRING);
+    $package = filter_var($package, FILTER_SANITIZE_STRING);
 
     // Create the email message
     $to = 'info@creatixmind.com';
@@ -20,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $body .= "Email: $email\n";
     $body .= "Number: $number\n";
     $body .= "Forecasted Budget: $budget\n";
+    $body .= "Choosen Package: $package\n";
     $body .= "Message: $message\n";
     $headers = "From: $email";
 
